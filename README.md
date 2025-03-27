@@ -2,13 +2,13 @@
 
 This repository contains the code and resources for the Poultry Disease Detection System developed using Mask R-CNN to classify and detect disease patterns in poultry fecal images. The project leverages the Mask R-CNN framework from [Matterport's Mask R-CNN repository](https://github.com/matterport/Mask_RCNN/) with custom modifications to adapt it for multi-class classification and segmentation of poultry fecal samples.
 
----
+</br>
 
 ## 📚 Project Overview
 
 Poultry farming plays a crucial role in ensuring global food security and economic stability. However, the spread of infectious diseases such as Coccidiosis, Salmonella, and Newcastle disease poses significant challenges for the industry. This project aims to automate the detection and classification of poultry diseases by analyzing fecal images using Mask R-CNN, providing an efficient and scalable solution for real-time disease monitoring and management.
 
----
+</br>
 
 ## 🚀 Features
 
@@ -18,7 +18,7 @@ Poultry farming plays a crucial role in ensuring global food security and econom
 ✅ Configurable parameters for fine-tuning and performance optimization.</br>
 ✅ Generates detailed classification reports and confusion matrices for evaluation.</br>
 
----
+</br>
 
 ## 📂 Dataset
 
@@ -31,14 +31,14 @@ The dataset used for this project was sourced from [Kaggle: Poultry Diseases Det
 
 For this project, a **subset of 300 images per class** was selected **non-randomly** to ensure a balanced representation of each class. This subset was then used for annotation and model training.
 
----
+</br>
 
 ## 📝 Annotations
 
 * 300 images per class were selected and annotated using the [VGG Image Annotator (VIA)](https://www.robots.ox.ac.uk/~vgg/software/via/).
 * Annotations are stored in JSON format and used as input for training the Mask R-CNN model.
 
---- 
+</br> 
 
 ## 🧩 Dependencies
 
@@ -64,10 +64,9 @@ tensorboard==2.10.0
 memory_profiler
 imgaug
 tqdm
-
 ```
 
----
+</br>
 
 ## 📝 Installation and Setup
 
@@ -96,11 +95,12 @@ source venv/bin/activate   # On Linux/Mac
 pip install -r requirements.txt
 ```
 
-### 4. Download COCO Weights
+### 4. Run the Project Notebook
 
-Download pre-trained COCO weights from [Mask R-CNN COCO Weights](https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5) and place them in the project directory.
+After setting up the environment and configuring the dataset, open the Jupyter Notebook to run the training process or start predicting with your own images.
 
-### 5. Run the Training Notebook
+</br>
 
-After setting up the environment and configuring the dataset, open the Jupyter Notebook to run the training process.
+## 🔍 Trained Model
 
+You may download the trained model [here](https://github.com/rt-neronero/Poultry-Fecal-MaskRCNN/raw/refs/heads/main/mask_rcnn_poultry.h5?download=).
